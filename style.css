@@ -229,25 +229,6 @@ Wyx19680113/
 }
 
 
-/* .about {
-     color: #fff;
-    padding: 8% 2%;
-    min-height: 100vh;
-    text-align: center;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    position: relative;
-    height: 80vh; 
-} */
-
-/* .about-content {
-    max-width: 800px;
-    margin: 0 auto;
-    font-family: 'Open Sans', sans-serif;
-} */
-
 .profile-image img {
     width: 150px;
     height: 150px;
@@ -713,4 +694,109 @@ footer {
     background-color: #3b3b5e;
     color: #fff;
     position: relative;
+}
+
+/* Responsive Layout for Small Screens */
+@media (max-width: 768px) {
+    /* Adjust Body Padding */
+    body {
+        padding: 0 10px;
+    }
+
+    /* Navigation Bar */
+    .menu-wrap {
+        height: 50px;
+    }
+    .icon-list {
+        flex-direction: column;
+        gap: 15px;
+        padding-right: 0;
+        justify-content: center;
+    }
+    .menu-button {
+        width: 35px;
+        height: 30px;
+        top: 10px;
+        left: 10px;
+    }
+
+    /* Hero Section */
+    .hero {
+        height: 80vh;
+        background-size: cover;
+    }
+    .name {
+        font-size: 2.5em;
+    }
+    .see-more {
+        bottom: 10px;
+        font-size: 16px;
+    }
+
+    /* About Section */
+    #about {
+        flex-direction: column;
+        padding: 20px;
+    }
+    .about-content {
+        max-width: 100%;
+    }
+    .profile-image img {
+        width: 100px;
+        height: 100px;
+    }
+
+    /* Skills and Education Section */
+    .skills-education {
+        flex-direction: column;
+        gap: 40px;
+    }
+    .education-section,
+    .skills-section {
+        width: 100%;
+        padding: 0;
+    }
+    .education-card {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .education-logo {
+        width: 80px;
+        height: 80px;
+    }
+
+    /* Projects Section */
+    .project-card {
+        flex-direction: column;
+        align-items: center;
+    }
+    .project-image {
+        width: 100%;
+        height: 200px;
+    }
+    .project-text,
+    .project-text1 {
+        width: 100%;
+        padding: 10px;
+    }
+
+    /* Contact Section */
+    .contact-container {
+        flex-direction: column;
+        height: auto;
+    }
+    .contact-form,
+    .contact-info {
+        width: 100%;
+        padding: 20px;
+    }
+    .submit-btn {
+        font-size: 16px;
+        padding: 15px;
+    }
+
+    /* Footer */
+    footer {
+        padding: 40px;
+    }
 }
