@@ -701,24 +701,42 @@ footer {
     /* Adjust Body Padding */
     body {
         padding: 0 10px;
+        margin: 0;
     }
 
     /* Navigation Bar */
-    .menu-wrap {
-        height: 50px;
-    }
-    .icon-list {
-        flex-direction: column;
-        gap: 15px;
-        padding-right: 0;
-        justify-content: center;
-    }
     .menu-button {
+        top: 12px;
+        left: 12px;
         width: 35px;
         height: 30px;
-        top: 10px;
-        left: 10px;
+        padding-right: 4px;
     }
+
+    .icon-list {
+        flex-direction: row;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .icon-list a {
+        font-size: 18px;
+        text-align: center;
+        padding: 10px;
+    }
+    .icon-list a span {
+        font-size: 12px;
+        padding-top: 0.1em;
+    }
+    .menu-wrap {
+        height: 10vh;
+        overflow-y: scroll; /* Enable scrolling for long content */
+    }
+
+    .menu-wrap.active {
+        height: 10vh;
+    }
+    
 
     /* Hero Section */
     .hero {
